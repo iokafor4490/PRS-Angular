@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./vendor-edit.component.css']
 })
 export class VendorEditComponent {
+  pageTitle: string = "Edit Vendor";
 
 }

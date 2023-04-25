@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./request-review.component.css']
 })
 export class RequestReviewComponent {
+pageTitle: string = "Request Review";
 
 }

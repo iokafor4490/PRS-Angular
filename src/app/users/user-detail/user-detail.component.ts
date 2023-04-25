@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-detail.component.css']
 })
 export class UserDetailComponent {
+pageTitle: string = "User Detail";
 
 }

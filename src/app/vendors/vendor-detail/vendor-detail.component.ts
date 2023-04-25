@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./vendor-detail.component.css']
 })
 export class VendorDetailComponent {
+  pageTitle: string = "Vendor Detail";
 
 }

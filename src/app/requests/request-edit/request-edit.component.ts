@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./request-edit.component.css']
 })
 export class RequestEditComponent {
+pageTitle: string = "Edit Request";
 
 }

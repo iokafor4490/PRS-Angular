@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./review-detail.component.css']
 })
 export class ReviewDetailComponent {
+pageTitle: string = "Review Detail";
 
 }

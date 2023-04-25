@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-edit.component.css']
 })
 export class UserEditComponent {
+pageTitle: string = "Edit User";
 
 }

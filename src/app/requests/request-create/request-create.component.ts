@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./request-create.component.css']
 })
 export class RequestCreateComponent {
+pageTitle: string = "Create New Request";
 
 }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./request-list.component.css']
 })
 export class RequestListComponent {
+ pageTitle: string = "Request List";
 
 }

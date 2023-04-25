@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-edit.component.css']
 })
 export class ProductEditComponent {
+  pageTitle: string = "Edit Products";
 
 }

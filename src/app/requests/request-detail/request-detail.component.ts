@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./request-detail.component.css']
 })
 export class RequestDetailComponent {
+pageTitle: string = "Request Detail";
 
 }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./vendor-create.component.css']
 })
 export class VendorCreateComponent {
+  pageTitle: string = "Create New Vendor";
 
 }
