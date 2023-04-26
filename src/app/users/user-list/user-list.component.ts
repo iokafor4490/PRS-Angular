@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class UserListComponent {
   pageTitle: string = "Users List";
+  products: any[] = [];
 
 }
