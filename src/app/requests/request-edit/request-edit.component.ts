@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class RequestEditComponent {
 pageTitle: string = "Edit Request";
-products: any[] = [];
+
 
 }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   pageTitle: string = "Footer Component";
-  products: any[] = [];
+  footer: any[] = [];
 
 }

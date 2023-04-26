@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
   pageTitle: string = "Menu Component";
-  products: any[] = [];
+  menu: any[] = [];
 
 }

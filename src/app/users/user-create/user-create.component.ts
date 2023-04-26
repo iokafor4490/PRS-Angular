@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class UserCreateComponent {
 pageTitle: string = "Create New User";
-products: any[] = [];
+
 }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class UserLoginComponent {
 pageTitle: string = "User Login";
-products: any[] = [];
+
 
 }
