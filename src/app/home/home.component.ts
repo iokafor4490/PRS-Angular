@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   pageTitle: string = "Header Component";
-  home: any[] = [];
+  
 
 }
