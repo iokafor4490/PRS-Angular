@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class VendorDetailComponent {
   pageTitle: string = "Vendor Detail";
+  products: any[] = [];
 
 }
