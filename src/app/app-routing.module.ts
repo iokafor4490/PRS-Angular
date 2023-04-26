@@ -20,7 +20,7 @@ import { RequestListComponent } from './requests/request-list/request-list.compo
 import { RequestReviewComponent } from './requests/request-review/request-review.component';
 import { ReviewDetailComponent } from './requests/review-detail/review-detail.component';
 import { HomeComponent } from './home/home.component';
-import { MenuComponent } from './menu/menu.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Will not be our default path once we add login
@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: "vendors/edit/:id", component: VendorEditComponent },
   { path: "vendors/detail/:id", component: VendorDetailComponent },
   { path: "products/list", component: ProductListComponent },
-  { path: "menu", component: MenuComponent}
+  
   
 ];
 
