@@ -21,7 +21,7 @@ import { RequestEditComponent } from './requests/request-edit/request-edit.compo
 import { RequestListComponent } from './requests/request-list/request-list.component';
 import { RequestReviewComponent } from './requests/request-review/request-review.component';
 import { ReviewDetailComponent } from './requests/review-detail/review-detail.component';
-import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -49,7 +49,7 @@ import { FooterComponent } from './footer/footer.component';
     RequestListComponent,
     RequestReviewComponent,
     ReviewDetailComponent,
-    HomeComponent,
+    HeaderComponent,
     MenuComponent,
     FooterComponent,
   
