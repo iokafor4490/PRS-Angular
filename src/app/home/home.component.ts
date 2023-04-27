@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  pageTitle: string = "Home";
+  pageTitle: string = "Home Component";
   
 
 }

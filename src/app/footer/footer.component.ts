@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  pageTitle: string = "Footer";
+  pageTitle: string = "Footer Component";
   footer: any[] = [];
 
 }
