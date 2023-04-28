@@ -20,6 +20,16 @@
             <th scope = "col">Unit</th>
             <th scope = "col">Photo Path</th>
             <th scope = "col" >Vendor</th>
+            <th scope="col">Detail</th>
+            <div>
+                <img src="\assets\Detail-Icon.png" alt="" width = "20" height = "20"/>
+            </div>
+
+            <th scope="col">Edit</th>
+            <div>
+                <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/>
+            </div>
+
             </tr>
             </thead>
             <tbody>
@@ -31,6 +41,8 @@
                 <td>{{ product.unit }}</td>
                 <td> {{ product.photoPath }}</td>
                 <td>{{ product.vendor.name }}</td>
+
+                
                 
                 </tr>
             </tbody>
