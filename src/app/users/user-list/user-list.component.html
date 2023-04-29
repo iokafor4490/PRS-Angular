@@ -4,9 +4,9 @@
     <div class="card-body">
         <h5 class="card-title">{{ pageTitle }}</h5>
 
-        <a routerLink="/user/create">
-            <button>CREATE NEW USER</button>   
-          </a>
+        <a routerLink="user/create"></a> 
+        <button>
+        <a routerLink="/user/create"> ADD NEW USER</a></button>
           <br>
           <br>
 
@@ -22,17 +22,9 @@
                     <th scope="col">Admin</th>
                     <th scope="col">Reviewer</th>
                     <th scope="col">Detail</th>
-
-                    <div>
-                    <img src="\assets\Detail-Icon.png" alt="" width = "20" height = "20"/>
-                    </div>
-
-                   
                     <th scope="col">Edit</th>
 
-                    <div>
-                        <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/>
-                    </div>
+                    
                 </tr> 
 
             </thead>
@@ -43,13 +35,26 @@
                     <td scope="row">{{ user.userName }}</td>
                     <td scope="row">{{ user.firstName }}</td>
                     <td scope="row">{{ user.lastName }}</td>
-                    <td scope="row">{{ user.username }}</td>
                     <td scope="row">{{ user.phone }}</td>
                     <td scope="row">{{ user.email }}</td>
                     <td scope="row">{{ user.isAdmin }}</td>
                     <td scope="row">{{ user.isReviewer }}</td>
-                    <td scope="row"></td>
-                    <td scope="row"></td>
+                    
+                 <td>
+                 <div>
+                        
+                 <a routerLink="user/detail/{{user.id}}">
+                    <button> <img src="\assets\Detail-Icon.png" alt="" width = "25" height = "25"/></button>
+                        </a>
+                        
+                    </div>
+                     </td> 
+                     <td>
+                        <div>
+                    <a routerLink = "/user/edit/{{user.id}}">Edit</a>
+                    <button> <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/> </button>
+                    </div> 
+                    </td>
                 </tr>
 
             </tbody>
