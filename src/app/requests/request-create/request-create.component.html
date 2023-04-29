@@ -1,6 +1,24 @@
-<p>{{pageTitle}} works!</p>
-<header>
-    <app-menu></app-menu>
-    </header>
+<app-menu></app-menu>
+
+<label for="dateneeded">Date Needed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="dateneeded" id="dateneeded" name="dateneeded">
+<br>
+<label for="description">Description:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="description" id="description" name="description">
+<br>
+<label for="price">Justification:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="price" id="price" name="justification">
+<br>
+
+<select>
+    <option value="" style="display:none">Delivery Mode</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+</select>
+
+<br>
+<br>
+<button type="save" value="Save">Save</button>
     
-    <app-footer></app-footer>
+    
+<app-footer></app-footer>
