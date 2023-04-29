@@ -1,6 +1,31 @@
-<p>{{pageTitle}} works!</p>
-<header>
-    <app-menu></app-menu>
-    </header>
+<app-menu></app-menu>
+
+<label for="partnumber">Part Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="partnumber" id="partnumber" name="partnumber">
+<br>
+<label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="name" id="name" name="name">
+<br>
+<label for="price">Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="price" id="price" name="price">
+<br>
+<label for="unit">Unit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="unit" id="unit" name="unit">
+<br>
+<label for="photopath">Photo Path:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="photopath" id="photopath" name="photopath">
+<br>
+<label for="vendor">Vendor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="vendor" id="vendor" name="vendor">
+
+
+<button routerLink="/product/edit/{{products.id}}" type="edit" value="Edit">Edit</button>
+<button type="delete" value="Delete">Delete</button>
+
+
     
-    <footer></footer>
+
+
+
+
+<footer></footer>

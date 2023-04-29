@@ -1,6 +1,32 @@
-<p>{{pageTitle}} works!</p>
-<header>
-    <app-menu></app-menu>
-    </header>
+<app-menu></app-menu>
     
-    <app-footer></app-footer>
+<form>
+    
+    <label for="code">Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="code" name="code"><br><br>
+    <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="address">Address:&nbsp;</label>
+    <input type="text" id="address" name="address"><br><br>
+    <label for="city">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="city" name="city"><br><br>
+    <label for="state">State:&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="st" name="state"><br><br>
+    <label for="zipcode">Zip Code:&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="zip" name="zip code"><br><br>
+    <label for="phonenumber">Phone Number:&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="phonenumber" name="phone numbe"><br><br>
+    <label for="email">Email:&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="email" name="email"><br><br>
+   
+   </form>
+   
+   <button routerLink="/vendor/edit/{{vendor.id}}" type="edit" value="Edit">Edit</button>
+   <button type="delete" value="Delete">Delete</button>
+
+
+
+
+
+
+<app-footer></app-footer>
