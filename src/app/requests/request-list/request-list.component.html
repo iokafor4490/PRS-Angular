@@ -14,6 +14,7 @@
             <thead>
 
                 <tr>
+                    <th scope="col">Id</th>
                     <th scope="col">Description</th>
                     <th scope="col">Justification</th>
                     <th scope="col">Rejection Reason</th>
@@ -37,6 +38,7 @@
             <tbody>
 
                 <tr *ngFor="let request of requests">
+                    <td scope="row">{{ request.id }}</td>
                     <td scope="row">{{ request.description }}</td>
                     <td scope="row">{{ request.justification }}</td>
                     <td scope="row">{{ request.rejectionReason }}</td>
