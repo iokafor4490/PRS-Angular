@@ -5,7 +5,7 @@
         <h5 class="card-title">{{ pageTitle }}</h5>
 
         <a routerLink="/request/create">
-            <button>CREATE NEW REQUEST</button>   
+            <button>ADD NEW REQUEST</button>   
           </a>
           <br>
           <br>
@@ -24,13 +24,8 @@
                     <th scope="col">Status</th>
                     <th scope="col">Total</th>
                     <th scope="col">Detail</th>
-                    <div>
-                        <img src="\assets\Detail-Icon.png" alt="" width = "20" height = "20"/>
-                    </div>
                     <th scope="col">Edit</th>
-                    <div>
-                        <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/>
-                    </div>
+                   
                 </tr> 
 
             </thead>
@@ -47,8 +42,24 @@
                     <td scope="row">{{ request.dateNeeded }}</td>
                     <td scope="row">{{ request.status }}</td>
                     <td scope="row">{{ request.total }}</td>
-                    <td scope="row"></td>
-                    <td scope="row"></td>
+                    
+                    
+
+                    <td>
+                        <div>
+                        
+                        <a routerLink="request/detail/{{request.id}}">
+                    <button> <img src="\assets\Detail-Icon.png" alt="" width = "25" height = "25"/></button>
+                        </a>
+                        
+                    </div>
+                        </td><td>
+                        <div>
+                    <a routerLink = "/request/edit/{{request.id}}">Edit</a>
+                    <button> <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/> </button>
+                        
+                         </div> 
+                        </td>
                 </tr>
 
             </tbody>
