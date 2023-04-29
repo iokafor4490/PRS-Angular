@@ -4,25 +4,31 @@
 <form>
     
     <label for="fname">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    {{user.firstName}}
     <br>
     <label for="fname">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    {{user.lastName}}
     <br>
     <label for="fname">Phone Number:&nbsp;</label>
+    {{user.phone}}
+    
     <br>
     <label for="fname">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    {{user.email}}
     <br>
     <label for="fname">Username:&nbsp;&nbsp;&nbsp;</label>
-    <br>
-    <label for="fname">Password:&nbsp;&nbsp;&nbsp;</label>
+    {{user.userName}}
     <br>
     <label for="fname">Reviewer Status:&nbsp;</label>
+    {{user.isReview}}
     <br>
     <label for="fname">Admin Status:&nbsp;</label>
+    {{user.isAdmin}}
     <br>
    
    </form>
     
-   <button routerLink="/user/detail/:id" type="edit" value="Edit">Edit</button>
+   <button routerLink="/user/edit/{{user.id}}" type="edit" value="Edit">Edit</button>
    <button type="delete" value="Delete">Delete</button>
 
 

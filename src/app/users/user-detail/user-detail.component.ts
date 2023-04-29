@@ -7,18 +7,20 @@ import { Component } from '@angular/core';
 })
 export class UserDetailComponent {
 pageTitle: string = "User Detail";
-users: any[] = [
+user: any= 
 {
   "id": 1,
-  "userName": "username",
-  "firstName": "firstName",
-  "lastName": "lastName",
+  "userName": "ioka4123",
+  "firstName": "Ike",
+  "lastName": "Okafor",
   "phone": "5135551234",
   "email": "admin@email.com",
   "isReviewer": true,
   "isAdmin": true
-},
-
-]
+}
 
 }
+
+
+
+
