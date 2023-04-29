@@ -1,6 +1,47 @@
-<p>{{pageTitle}} works!</p>
-<header>
-    <app-menu></app-menu>
-    </header>
+<app-menu></app-menu>
+
+<table class="table table-sm">
+
+
+    <label for="description">Description:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
     
-    <app-footer></app-footer>
+    <br>
+    <label for="justification">Justification:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    
+    <br>
+    
+    <label for="deliverymode">Delivery Mode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    
+    <br>
+    <label for="submitteddate">Submitted Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    
+    <br>
+    <label for="datedneeded">Dated Needed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    
+    <br>
+    <label for="status">Status:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <br>
+    
+    </table>
+    
+    <h2>Line Items</h2>
+    
+    <table class="table">
+        <tr>
+    
+        <th>Part Number:</th>
+        <th>Product Description:</th>
+        <th>Vendor:</th>
+        <th>Price:</th>
+        <th>Quantity:</th>
+        <th>Total:</th>
+    
+    </tr>
+
+    <label for="rejectionReason">Reason for Rejection :</label><br>
+    
+    <button type="approve">Approve</button>
+    <button type="reject">Reject</button>
+    
+    
+<app-footer></app-footer>

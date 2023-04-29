@@ -43,23 +43,23 @@
                     <td scope="row">{{ request.status }}</td>
                     <td scope="row">{{ request.total }}</td>
                     
-                    
-
                     <td>
-                        <div>
+                     <div>
+                               
                         
-                        <a routerLink="request/detail/{{request.id}}">
-                    <button> <img src="\assets\Detail-Icon.png" alt="" width = "25" height = "25"/></button>
-                        </a>
-                        
-                    </div>
-                        </td><td>
-                        <div>
-                    <a routerLink = "/request/edit/{{request.id}}">Edit</a>
-                    <button> <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/> </button>
-                        
-                         </div> 
-                        </td>
+                    <button routerLink="/request/detail/{{request.id}}"> <img src="\assets\Detail-Icon.png" alt="" width = "25" height = "25"/></button>
+                           
+                               
+                           </div>
+                            </td> 
+                            <td>
+                            <div>
+                           
+            <button routerLink = "/request/edit/{{request.id}}"> <img src="\assets\PencilEditIcon.png" alt="" width = "20" height = "20"/> </button>
+                           </div> 
+                           </td>
+
+                    
                 </tr>
 
             </tbody>

@@ -14,8 +14,8 @@
                     <th scope="col">Date Needed</th>
                     <th scope="col">Status</th>
                     <th scope="col">Total</th>
-                    <th scope="col">Detail</th>
-                    <th scope="col">Edit</th>
+                    <th scope="col">Review Request</th>
+                    
                 </tr> 
 
             </thead>
@@ -31,8 +31,11 @@
                     <td scope="row">{{ request.dateNeeded }}</td>
                     <td scope="row">{{ request.status }}</td>
                     <td scope="row">{{ request.total }}</td>
-                    <td scope="row"></td>
-                    <td scope="row"></td>
+                    <td>
+                    <div>
+         <button routerLink="/review/detail/{{request.id}}"> <img src="\assets\ReviewIcon.png" alt="" width = "25" height = "25"/></button>
+                </div>
+             </td> 
                 </tr>
 
             </tbody>
