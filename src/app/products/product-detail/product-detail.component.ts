@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Product } from 'src/model/product.class';
+
 
 @Component({
   selector: 'app-product-detail',
@@ -7,14 +9,14 @@ import { Component } from '@angular/core';
 })
 export class ProductDetailComponent {
   pageTitle: string = "Product Detail";
-  products: any= 
+  products: any=
     {
       "id": 1,
-      "partNumber": "CCC-1234",
+      "partNbr": "CCC-1234",
       "name": "Coca-Cola Classic 40 pack",
       "price": 8.99,
       "unit": "each",
-      "photoPath": null,
+      "photoPath": ".\assets\cola.png",
       "vendor": {
           "id": 1,
           "code": "CODE-1234",
@@ -27,5 +29,6 @@ export class ProductDetailComponent {
           "email": "customercare@wallyworld.net"
       }
     }
+  
   }
 

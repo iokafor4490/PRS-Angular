@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from 'src/model/product.class';
 
 @Component({
   selector: 'app-product-create',
@@ -7,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class ProductCreateComponent {
   pageTitle: string = "Create New Product";
-  products: any[] = [];
+  products: Product[] = [];
 
 }
