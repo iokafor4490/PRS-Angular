@@ -3,21 +3,30 @@
 
     
 <label for="dateneeded">Date Needed:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="dateneeded" id="dateneeded" name="dateneeded">
-<br>
-<label for="description">Description:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="description" id="description" name="description">
-<br>
-<label for="price">Justification:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="price" id="price" name="justification">
+<input type="text"  name="dateneeded" placeholder="Enter Date">
 <br>
 
+<label for="description">Description:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" name="description" placeholder="Enter Description">
+<br>
+
+<label for="price">Justification:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" name="justification" placeholder="Enter Justification">
+<br>
+
+
+<label for="deliveryMode">Delivery Mode: </label>
+<select name="deliveryMode">
+    <option value="" selected>Select Delivery Mode</option>
+    <option>USPS</option>
+    <option>Courier</option>
+    <option>UPS</option>
+    <option>Pick Up</option>
+</select>
+<br>
+<br>
 
 <button type="save">Save</button>
-
-<label for="deliverymode">Delivery Mode: </label>
-<select name="deliverymode">
-
 
 
 

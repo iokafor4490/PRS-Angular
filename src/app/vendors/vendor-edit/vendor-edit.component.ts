@@ -8,6 +8,16 @@ import { Vendor } from 'src/model/vendor.class';
 })
 export class VendorEditComponent {
   pageTitle: string = "Edit Vendor";
-  
-
+  vendor: any = 
+  {
+    "id": 1,
+    "code": "CODE-1234",
+    "name": "Wally World",
+    "address": "123 Capitalism Lane",
+    "city": "Cincinnati",
+    "state": "OH",
+    "zip": "45202",
+    "phone": "5135551234",
+    "email": "customercare@wallyworld.net"
 }
+  }

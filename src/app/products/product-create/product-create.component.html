@@ -1,26 +1,36 @@
 <app-menu></app-menu>
    
 <label for="partnumber">Part Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="partnumber" id="partnumber" name="partnumber">
+<input type="partnumber" name= "partnumber" placeholder="Enter Part Number">
 <br>
-<label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="name" id="name" name="name">
+
+<label for="name"> Product Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="name" name= "name" placeholder="Enter Product Name">
 <br>
+
 <label for="price">Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="price" id="price" name="price">
+<input type="price" name="price" placeholder="Enter Price">
 <br>
+
 <label for="unit">Unit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="unit" id="unit" name="unit">
+<input type="unit" name="unit" placeholder="Enter Unit">
 <br>
+
 <label for="photopath">Photo Path:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="photopath" id="photopath" name="photopath">
+<input type="photopath" name="photopath" placeholder="Enter Photo Link">
 <br>
 
 <label for="vendor">Vendor: </label>
-<select name="vendor">
+<select name="vendor" placeholder="select vendor">
+    <option value="" selected>Select Vendor</option>
+            <option>Wally World</option>
+            <option>Apple Inc</option>
+            <option>ABC Toys</option>
+        </select><br>
 
 <br>
 <br>
-<button type="save" value="Save">Save</button>
 
-<footer></footer>
+<button type="save">Save</button>
+
+<app-footer></app-footer>
