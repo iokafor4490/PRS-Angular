@@ -8,6 +8,18 @@ import { User } from 'src/model/user.class';
 })
 export class UserEditComponent {
 pageTitle: string = "Edit User";
-
+users : any =
+{
+  "id": 1,
+  "userName": "username",
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "phone": "5135551234",
+  "email": "admin@email.com",
+  "isReviewer": true,
+  "isAdmin": true
+}
 
 }
+
+
