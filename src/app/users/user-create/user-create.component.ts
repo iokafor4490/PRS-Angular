@@ -8,5 +8,6 @@ import { User } from 'src/model/user.class';
 })
 export class UserCreateComponent {
 pageTitle: string = "Create New User";
+user!: User;
 
 }
