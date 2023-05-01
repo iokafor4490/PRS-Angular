@@ -10,6 +10,8 @@ export class Product {
     vendorID: number;
     vendor: Vendor;
 
+    
+
     constructor(id: number = 0, partNbr: string = "", name: string = "",
         price: number, unit: string = "", photoPath: string = "",
         vendorID: number, vendor: Vendor) {

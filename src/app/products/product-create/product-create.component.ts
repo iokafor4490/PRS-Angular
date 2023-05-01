@@ -8,6 +8,6 @@ import { Product } from 'src/model/product.class';
 })
 export class ProductCreateComponent {
   pageTitle: string = "Create New Product";
-  products: Product[] = [];
+  
 
 }

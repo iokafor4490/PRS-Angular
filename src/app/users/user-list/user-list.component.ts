@@ -12,6 +12,7 @@ export class UserListComponent {
     {
         "id": 1,
         "userName": "username",
+        "password": "password",
         "firstName": "firstName",
         "lastName": "lastName",
         "phone": "5135551234",
@@ -22,6 +23,7 @@ export class UserListComponent {
     {
         "id": 2,
         "userName": "nlaw",
+        "password": "aqswde123",
         "firstName": "Abby",
         "lastName": "Fritsch",
         "phone": "5134170348",
@@ -32,6 +34,7 @@ export class UserListComponent {
     {
         "id": 1003,
         "userName": "ijeokafor",
+        "password": "pass123",
         "firstName": "Ije",
         "lastName": "Okafor",
         "phone": "2163083333",
@@ -42,6 +45,7 @@ export class UserListComponent {
     {
         "id": 1007,
         "userName": "rwalters",
+        "password": "rwalt123",
         "firstName": "Ricky",
         "lastName": "Walters",
         "phone": "5134003454",
@@ -52,6 +56,7 @@ export class UserListComponent {
     {
         "id": 1009,
         "userName": "ballou343",
+        "password": "granty123",
         "firstName": "Granty Bob",
         "lastName": "Ballou",
         "phone": "513200300",
@@ -62,6 +67,7 @@ export class UserListComponent {
     {
         "id": 1010,
         "userName": "jimmy343",
+        "password": "jimmy123",
         "firstName": "Jimmy",
         "lastName": "Kes",
         "phone": "5132789888",
@@ -72,6 +78,7 @@ export class UserListComponent {
     {
         "id": 1011,
         "userName": "nickstallings454",
+        "password": "nicky123",
         "firstName": "Nick",
         "lastName": "Stallings",
         "phone": "5130303432",
@@ -82,6 +89,7 @@ export class UserListComponent {
     {
         "id": 1012,
         "userName": "max123",
+        "password": "Adams123",
         "firstName": "Hilary",
         "lastName": "Clinton",
         "phone": "5139009191",
@@ -92,6 +100,7 @@ export class UserListComponent {
     {
         "id": 1015,
         "userName": "eke123",
+        "password": "ekebob",
         "firstName": "Ekene",
         "lastName": "Remur",
         "phone": "5135459090",
@@ -102,6 +111,7 @@ export class UserListComponent {
     {
         "id": 1016,
         "userName": "grt123",
+        "password": "roobob",
         "firstName": "Ross",
         "lastName": "Okafor",
         "phone": "5135889090",
@@ -112,6 +122,7 @@ export class UserListComponent {
     {
         "id": 1018,
         "userName": "paigeb",
+        "password": "bres123",
         "firstName": "Paige",
         "lastName": "Bresnan",
         "phone": "5135458080",
@@ -119,7 +130,6 @@ export class UserListComponent {
         "isReviewer": true,
         "isAdmin": false
     }
-    
-]
+];
 
 }

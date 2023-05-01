@@ -11,9 +11,10 @@ pageTitle: string = "User Detail";
 user: User= 
 {
   "id": 1,
-  "userName": "ioka4123",
-  "firstName": "Ike",
-  "lastName": "Okafor",
+  "userName": "username",
+  "password": "password",
+  "firstName": "firstName",
+  "lastName": "lastName",
   "phone": "5135551234",
   "email": "admin@email.com",
   "isReviewer": true,
