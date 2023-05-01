@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { User } from 'src/model/user.class';
+import { Request } from 'src/model/request.class';
 
 @Component({
   selector: 'app-request-review',
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class RequestReviewComponent {
 pageTitle: string = "Request Review";
+users!: User;
 requests: any[] = [
 
 

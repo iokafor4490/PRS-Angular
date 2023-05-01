@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Request } from 'src/model/request.class';
+import { User } from 'src/model/user.class';
+
 
 @Component({
   selector: 'app-request-list',
@@ -7,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class RequestListComponent {
  pageTitle: string = "Request List";
+ users!: User;
  requests: any[] = [
   {
     "id": 1,

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { User } from 'src/model/user.class';
+import { Request } from 'src/model/request.class';
 
 @Component({
   selector: 'app-request-detail',
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class RequestDetailComponent {
 pageTitle: string = "Request Detail";
+user!: User;
 request: any =
 
 {
