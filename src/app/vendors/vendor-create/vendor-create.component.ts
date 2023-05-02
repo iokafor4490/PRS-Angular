@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Vendor } from 'src/app/model/vendor.class';
+import { VendorService } from 'src/app/service/vendor.service';
 
 @Component({
   selector: 'app-vendor-create',
@@ -8,6 +9,18 @@ import { Vendor } from 'src/app/model/vendor.class';
 })
 export class VendorCreateComponent {
   pageTitle: string = "Create New Vendor";
- 
+  vendor!: Vendor;
 
-}
+  constructor(
+    private vendorService: VendorService) {}
+  
+    ngOnInit(): void {
+        this.vendorService.create(this.vendor).subscribe(jr => {
+            this.vendor = jr as Vendor;
+    })
+  
+  }
+  
+  
+  }
+

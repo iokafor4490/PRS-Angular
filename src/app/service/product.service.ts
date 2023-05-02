@@ -12,16 +12,16 @@ export class ProductService {
 
     constructor(private http: HttpClient) { }
 
-    list(): Observable<Product[]> {
+    getAll(): Observable<Product[]> {
         
         return this.http.get(this.url) as Observable<Product[]>;
     }
 
-    get(id: number): Observable<Product> {
+    getbyId(id: number): Observable<Product> {
         return this.http.get(this.url + "/" + id) as Observable<Product>;
     }
       
-    save(vendor: Product): Observable<Product> {
+    create(vendor: Product): Observable<Product> {
         return this.http.post(this.url, vendor) as Observable<Product>;
     }
     

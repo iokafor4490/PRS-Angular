@@ -12,16 +12,16 @@ export class VendorService {
 
     constructor(private http: HttpClient) { }
 
-    list(): Observable<Vendor[]> {
+    getAll(): Observable<Vendor[]> {
         
         return this.http.get(this.url) as Observable<Vendor[]>;
     }
 
-    get(id: number): Observable<Vendor> {
+    getbyId(id: number): Observable<Vendor> {
         return this.http.get(this.url + "/" + id) as Observable<Vendor>;
     }
       
-    save(vendor: Vendor): Observable<Vendor> {
+    create(vendor: Vendor): Observable<Vendor> {
         return this.http.post(this.url, Vendor) as Observable<Vendor>;
     }
     
