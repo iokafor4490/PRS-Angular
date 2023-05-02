@@ -1,5 +1,5 @@
 import {Request} from "./request.class";
-import { Product} from "./product.class";
+import { Product} from "./product";
 
 
 export class LineItem {

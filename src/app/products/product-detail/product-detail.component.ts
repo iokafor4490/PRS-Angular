@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from 'src/model/product.class';
+import { Product } from 'src/app/model/product';
 
 
 @Component({
@@ -9,10 +9,10 @@ import { Product } from 'src/model/product.class';
 })
 export class ProductDetailComponent {
   pageTitle: string = "Product Detail";
-  products: any=
+  products: Product =
     {
       "id": 1,
-      "partNbr": "CCC-1234",
+      "partNumber": "CCC-1234",
       "name": "Coca-Cola Classic 40 pack",
       "price": 8.99,
       "unit": "each",

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Vendor } from 'src/model/vendor.class';
+import { Vendor } from 'src/app/model/vendor.class';
 
 @Component({
   selector: 'app-vendor-list',

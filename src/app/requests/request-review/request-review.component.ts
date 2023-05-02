@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { User } from 'src/model/user.class';
-import { Request } from 'src/model/request.class';
+import { User } from 'src/app/model/user.class';
+import { Request } from 'src/app/model/request.class';
 
 @Component({
   selector: 'app-request-review',

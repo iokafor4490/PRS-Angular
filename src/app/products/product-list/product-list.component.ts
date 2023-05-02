@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { Product } from "src/app/model/product";
+
 
 @Component({ 
     selector: 'app-product-list', 
@@ -8,14 +10,14 @@ import { Component } from "@angular/core";
  
 export class ProductListComponent {
     pageTitle: string = "Products List";
-    products: any[] = [
+    products: Product[] = [
         {
             "id": 1,
             "partNumber": "CCC-1234",
             "name": "Coca-Cola Classic 40 pack",
             "price": 8.99,
             "unit": "each",
-            "photoPath": null,
+            "photoPath": "",
             "vendor": {
                 "id": 1,
                 "code": "CODE-1234",
@@ -53,7 +55,7 @@ export class ProductListComponent {
             "name": "Pepsi Classic 12 pack",
             "price": 10.99,
             "unit": "each",
-            "photoPath": null,
+            "photoPath": "",
             "vendor": {
                 "id": 1003,
                 "code": "ABC",
@@ -205,7 +207,7 @@ export class ProductListComponent {
             "name": "Tools",
             "price": 64.93,
             "unit": "each",
-            "photoPath": null,
+            "photoPath": "",
             "vendor": {
                 "id": 1009,
                 "code": "Bloom123",

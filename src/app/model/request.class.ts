@@ -14,8 +14,8 @@ export class Request {
 
     constructor(id: number = 0, description: string = "",
         justification: string = "", rejectionReason: string = "",
-        deliveryMode: string = "", submittedDate: Date,
-        dateNeeded: Date, status: string = "", total: number,
+        deliveryMode: string = "", submittedDate: Date = new Date(),
+        dateNeeded: Date = new Date(), status: string = "", total: number,
         user: User) {
             this.id = id;
             this.description = description;

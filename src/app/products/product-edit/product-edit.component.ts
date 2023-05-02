@@ -14,7 +14,7 @@ export class ProductEditComponent {
     "name": "Coca-Cola Classic 40 pack",
     "price": 8.99,
     "unit": "each",
-    "photoPath": null,
+    "photoPath": "",
     "vendor": {
         "id": 1,
         "code": "CODE-1234",
