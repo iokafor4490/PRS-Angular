@@ -30,7 +30,7 @@ export class VendorService {
     }
       
     delete(id: number): Observable<Vendor> {
-        return this.http.delete(this.url + id) as Observable<Vendor>;
+        return this.http.delete(this.url + "/" + id) as Observable<Vendor>;
     
     }
 

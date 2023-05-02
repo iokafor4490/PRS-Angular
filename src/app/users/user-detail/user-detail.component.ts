@@ -26,7 +26,7 @@ ngOnInit() {
 }
 
 //delete user by Id
-userDelete() {
+ delete() {
   this.userService.delete(this.id).subscribe(
       jr => { 
           this.user = jr as User;
