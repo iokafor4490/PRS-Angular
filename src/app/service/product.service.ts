@@ -1,40 +1,40 @@
-// import { Injectable } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-// import { Observable } from 'rxjs';
-// import { Product } from 'src/model/product.class';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Product } from '../model/product';
 
-// @Injectable({
-//     providedIn: "root"
-// })
+@Injectable({
+    providedIn: "root"
+})
 
-// export class ProductService {
-//     url: string = "http://localhost:8080/products";
+export class ProductService {
+    url: string = "http://localhost:8080/products";
 
-//     constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) { }
 
-//     list(): Observable<Product[]> {
+    list(): Observable<Product[]> {
         
-//         return this.http.get(this.url) as Observable<Vendor[]>;
-//     }
+        return this.http.get(this.url) as Observable<Product[]>;
+    }
 
-//     get(id: number): Observable<Product> {
-//         return this.http.get(this.url + "/" + id) as Observable<Vendor>;
-//     }
+    get(id: number): Observable<Product> {
+        return this.http.get(this.url + "/" + id) as Observable<Product>;
+    }
       
-//     save(vendor: Vendor): Observable<Vendor> {
-//         return this.http.post(this.url, vendor) as Observable<Vendor>;
-//     }
+    save(vendor: Product): Observable<Product> {
+        return this.http.post(this.url, vendor) as Observable<Product>;
+    }
     
-//     update(vendor: Vendor): Observable<Vendor> {
-//         return this.http.put(this.url, vendor) as Observable<Vendor>;
-//     }
+    update(vendor: Product): Observable<Product> {
+        return this.http.put(this.url, vendor) as Observable<Product>;
+    }
       
-//     delete(id: number): Observable<Vendor> {
-//         return this.http.delete(this.url + id) as Observable<Vendor>;
+    delete(id: number): Observable<Product> {
+        return this.http.delete(this.url + id) as Observable<Product>;
     
-//     }
+    }
 
     
     
 
-// }
+}

@@ -18,8 +18,8 @@ request: Request =
   "justification": "test",
   "rejectionReason": "test",
   "deliveryMode": "test",
-  "submittedDate": new Date(),
-  "dateNeeded": new Date(),
+  "submittedDate": "2023-03-08T00:00:00",
+  "dateNeeded": "2023-03-08T00:00:00",
   "status": "Approved",
   "total": 3629.7,
   "user": {

@@ -12,16 +12,16 @@ export class UserService {
 
     constructor(private http: HttpClient) { }
 
-    list(): Observable<User[]> {
+    getAll(): Observable<User[]> {
         
         return this.http.get(this.url) as Observable<User[]>;
     }
 
-    get(id: number): Observable<User> {
+    getbyId(id: number): Observable<User> {
         return this.http.get(this.url + "/" + id) as Observable<User>;
     }
       
-    save(user: User): Observable<User> {
+    create(user: User): Observable<User> {
         return this.http.post(this.url, user) as Observable<User>;
     }
     
@@ -30,12 +30,12 @@ export class UserService {
     }
       
     delete(id: number): Observable<User> {
-        return this.http.delete(this.url + id) as Observable<User>;
+        return this.http.delete(this.url + "/" + id) as Observable<User>;
     
     }
 
     login(user: User): Observable<User> {
-        return this.http.post(this.url + "login", user) as Observable<User>;
+        return this.http.post(this.url + "/login", user) as Observable<User>;
     }
 
     
