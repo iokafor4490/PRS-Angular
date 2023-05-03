@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/model/product';
+import { ProductService } from 'src/app/service/product.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Vendor } from 'src/app/model/vendor.class';
+import { VendorService } from 'src/app/service/vendor.service';
 
 @Component({
   selector: 'app-product-edit',
@@ -7,26 +12,21 @@ import { Component } from '@angular/core';
 })
 export class ProductEditComponent {
   pageTitle: string = "Edit Products";
-  products: any =
-  {
-    "id": 1,
-    "partNumber": "CCC-1234",
-    "name": "Coca-Cola Classic 40 pack",
-    "price": 8.99,
-    "unit": "each",
-    "photoPath": "",
-    "vendor": {
-        "id": 1,
-        "code": "CODE-1234",
-        "name": "Wally World",
-        "address": "123 Capitalism Lane",
-        "city": "Cincinnati",
-        "state": "OH",
-        "zip": "45202",
-        "phone": "5135551234",
-        "email": "customercare@wallyworld.net"
-    }
+  products!: Product
+  id: number = 0;
+  
+  constructor(
+    private productService: ProductService,
+    private vendorService: VendorService,
+    private router: Router,
+    private route: ActivatedRoute)  {}
 
-}
-
+    ngOnInit() {
+      this.route.params.subscribe(params => this.id = params['id']);
+      this.productService.getbyId(this.id).subscribe(jr => this.products = jr as Product);
+     
+     }
+     update() {
+       this.productService.update(this.products).subscribe(jr => {this.products = jr as Product});
+     }
 }
