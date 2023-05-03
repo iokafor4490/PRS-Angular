@@ -1,31 +1,31 @@
 <app-menu></app-menu>
 
 <label for="partnumber">Part Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-{{products.partNumber}}
+{{product.partNumber}}
 <br>
 <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-{{products.name}}
+{{product.name}}
 
 <br>
 <label for="price">Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-{{products.price}}
+{{product.price}}
 
 <br>
 <label for="unit">Unit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-{{products.unit}}
+{{product.unit}}
 
 <br>
 <label for="photopath">Photo Path:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-{{products.photoPath}}
+{{product.photoPath}}
 
 <br>
 <label for="vendor">Vendor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-{{products.vendor}}
+{{product.vendor}}
 
 
 <br>
 <br>
-<button routerLink="/product/edit/{{products.id}}" type="edit" value="Edit">Edit</button>
+<button routerLink="/product/edit/{{product.id}}" type="edit" value="Edit">Edit</button>
 <button type="delete" value="Delete">Delete</button>
 
 

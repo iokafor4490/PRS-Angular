@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/model/product';
+import { ProductService } from 'src/app/service/product.service';
+import { Router, ActivatedRoute } from '@angular/router';
 
 
 
@@ -10,26 +12,26 @@ import { Product } from 'src/app/model/product';
 })
 export class ProductDetailComponent {
   pageTitle: string = "Product Detail";
-  products: Product =
-    {
-      "id": 1,
-      "partNumber": "CCC-1234",
-      "name": "Coca-Cola Classic 40 pack",
-      "price": 8.99,
-      "unit": "each",
-      "photoPath": ".\assets\cola.png",
-      "vendor": {
-          "id": 1,
-          "code": "CODE-1234",
-          "name": "Wally World",
-          "address": "123 Capitalism Lane",
-          "city": "Cincinnati",
-          "state": "OH",
-          "zip": "45202",
-          "phone": "5135551234",
-          "email": "customercare@wallyworld.net"
-      }
-    }
+  product!: Product;
+  id: number = 0;
   
-  }
 
+  constructor(
+    private productService: ProductService,
+    private router: Router,
+    private route: ActivatedRoute
+  ) {}
+
+  ngOnInit() {
+    this.route.params.subscribe(parms => this.id = parms['id']);
+    this.productService.getbyId(this.id).subscribe( jr =>  this.product = jr as Product);
+        }
+    
+  
+  
+     delete() {
+      this.productService.delete(this.id).subscribe(jr =>
+        this.router.navigateByUrl("product/list"));
+     }
+  
+      }
