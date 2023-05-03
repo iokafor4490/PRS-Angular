@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from 'src/app/model/user.class';
 import { UserService } from 'src/app/service/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-create',
@@ -12,7 +13,8 @@ pageTitle: string = "Create New User";
 user!: User;
 
 constructor(
-  private userService: UserService) {}
+  private userService: UserService,
+  private router: Router) {}
 
   ngOnInit(): void {
       this.userService.create(this.user).subscribe(jr => {
@@ -21,6 +23,8 @@ constructor(
 
 }
 
-
+update(): void {
+  this.userService.update(this.user).subscribe(jr => this.router.navigateByUrl("/users/list"));
 }
 
+}
