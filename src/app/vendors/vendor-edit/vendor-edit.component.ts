@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Vendor } from 'src/app/model/vendor.class';
 import { VendorService } from 'src/app/service/vendor.service';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-vendor-edit',
@@ -16,6 +16,7 @@ export class VendorEditComponent {
 
   constructor( 
     private vendorService: VendorService,
+    private router: Router,
     private route: ActivatedRoute) {}
   
   ngOnInit() {
@@ -27,5 +28,10 @@ export class VendorEditComponent {
     this.vendorService.update(this.vendors).subscribe(jr => {this.vendors = jr as Vendor});
   }
   
+  delete() {
+    this.vendorService.delete(this.id).subscribe(jr =>
+      this.router.navigateByUrl("vendor/list"));
+   }
+
 }
   
