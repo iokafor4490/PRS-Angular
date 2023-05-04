@@ -10,7 +10,7 @@ import { Request } from 'src/app/model/request.class';
 export class RequestReviewComponent {
 pageTitle: string = "Request Review";
 users!: User;
-requests: any[] = [
+requests: Request[] = [
 
 
   {
@@ -26,6 +26,7 @@ requests: any[] = [
     "user": {
         "id": 1,
         "userName": "username",
+        "password": "password",
         "firstName": "firstName",
         "lastName": "lastName",
         "phone": "5135551234",
