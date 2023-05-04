@@ -26,6 +26,10 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { LineItemCreateComponent } from './line-items/line-item-create/line-item-create.component';
+import { LineItemEditComponent } from './line-items/line-item-edit/line-item-edit.component';
+import { LineItemDetailComponent } from './line-items/line-item-detail/line-item-detail.component';
+import { LineItemListComponent } from './line-items/line-item-list/line-item-list.component';
 
 
 
@@ -54,6 +58,10 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     MenuComponent,
     FooterComponent,
+    LineItemCreateComponent,
+    LineItemEditComponent,
+    LineItemDetailComponent,
+    LineItemListComponent,
   
   ],
   imports: [
