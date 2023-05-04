@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/model/user.class';
 import { UserService } from 'src/app/service/user.service';
 import { Router } from '@angular/router';
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   templateUrl: './user-create.component.html',
   styleUrls: ['./user-create.component.css']
 })
-export class UserCreateComponent {
+export class UserCreateComponent implements OnInit {
 pageTitle: string = "Create New User";
 user!: User;
 
