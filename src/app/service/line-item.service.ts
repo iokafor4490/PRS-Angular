@@ -8,7 +8,7 @@ import { LineItem } from '../model/line-item.class';
     providedIn: 'root'
   })
   export class LineItemService {
-    url: string = "http://localhost:8080/line-items";
+    url: string = "http://localhost:8080/request-lines/";
 
     constructor(private http: HttpClient) { }
 

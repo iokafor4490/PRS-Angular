@@ -17,7 +17,7 @@ lineItem: any = {
       "name": "Coca-Cola Classic 40 pack",
       "price": 8.99,
       "unit": "each",
-      "photoPath": "",
+      "photoPath": "../../../assets/drink.png",
       "vendor": {
           "id": 1,
           "code": "CODE-1234",

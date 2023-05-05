@@ -1,1 +1,19 @@
-<p>line-item-create works!</p>
+<app-menu></app-menu>
+<table>
+    <tr>
+         <!-- request -->
+    </tr>
+    <tr>
+        <select name="products" id="products">
+            <option value="" *ngFor="let product of products"></option>
+        </select>
+    </tr>
+    <tr>
+        <td>Quantity: </td>
+        <td><input type="text" [(ngModel)]="lineItem.quantity"></td>
+   </tr>
+   
+</table>
+<button>Save</button>
+<app-footer></app-footer>
+
