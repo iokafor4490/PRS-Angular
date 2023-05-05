@@ -22,6 +22,7 @@ import { ReviewDetailComponent } from './requests/review-detail/review-detail.co
 import { HomeComponent } from './home/home.component';
 import { LineItemEditComponent } from './line-items/line-item-edit/line-item-edit.component';
 import { LineItemDetailComponent } from './line-items/line-item-detail/line-item-detail.component';
+import { LineItemCreateComponent } from './line-items/line-item-create/line-item-create.component';
 
 
 const routes: Routes = [
@@ -49,6 +50,7 @@ const routes: Routes = [
   { path: "product/list", component: ProductListComponent },
   { path: "line-item/edit/:id", component: LineItemEditComponent},
   { path: "line-item/detail/:id", component: LineItemDetailComponent},
+  { path: "line-item/create", component: LineItemCreateComponent},
   { path: '**', component: HomeComponent } // If you mess up in any way, it'll send you to this page (not secure!!!!)
   
   

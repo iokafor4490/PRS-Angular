@@ -15,12 +15,12 @@
         <td>{{lineItem.product.name}}</td>
         <td>{{lineItem.product.vendor.name}}</td>
         <td>{{lineItem.product.price}}</td>
-        <td>{{lineItem.product.quantity}}</td>
+        <td>{{lineItem.quantity}}</td>
         <td>{{lineItem.product.price * lineItem.quantity}}</td>
         <td><img class="icon" src="../../../assets/Detail-Icon.png" alt="" routerLink="/line-item/detail/{{lineItem.id}}"></td>
         <td><img class="icon" src="../../../assets/PencilEditIcon.png" alt="" routerLink="/line-item/edit/{{lineItem.id}}"></td>
         <td><img  class="icon" src="../../../assets/trash.png" alt="" ></td>
 
  </tr>
-     <tr><button>Add New</button></tr>
+     <tr><button routerLink="/line-item/create">Add New</button></tr>
 </tbody>

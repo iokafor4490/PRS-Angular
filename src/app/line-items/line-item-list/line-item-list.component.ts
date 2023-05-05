@@ -12,7 +12,7 @@ lineItems: any[] = [
     "id": 0,
     "requestId": 0,
     "productId": 0,
-    "quantity": 0,
+    "quantity": 3,
     "product": {
       "id": 1,
       "partNumber": "CCC-1234",

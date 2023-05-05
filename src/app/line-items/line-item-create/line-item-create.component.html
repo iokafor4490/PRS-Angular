@@ -5,7 +5,8 @@
     </tr>
     <tr>
         <select name="products" id="products">
-            <option value="" *ngFor="let product of products"></option>
+            <option value="{{product.name}}" *ngFor="let product of products">{{product.name}}</option>
+            <option value="test">{{products[0].name}}</option>
         </select>
     </tr>
     <tr>
@@ -14,6 +15,8 @@
    </tr>
    
 </table>
+<br>
+<br>
 <button>Save</button>
 <app-footer></app-footer>
 
