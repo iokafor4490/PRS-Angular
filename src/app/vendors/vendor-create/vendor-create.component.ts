@@ -13,8 +13,10 @@ export class VendorCreateComponent {
 
   constructor(
     private vendorService: VendorService) {}
+
+    ngOnit() {}
   
-    ngOnInit(): void {
+    create() {
         this.vendorService.create(this.vendor).subscribe(jr => {
             this.vendor = jr as Vendor;
     })

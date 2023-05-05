@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Vendor } from 'src/app/model/vendor.class';
 import { VendorService } from 'src/app/service/vendor.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-vendor-detail',
@@ -15,6 +15,7 @@ export class VendorDetailComponent {
   
   constructor (
     private vendorService: VendorService,
+    private router: Router,
     private route: ActivatedRoute) {}
 
 
@@ -23,6 +24,10 @@ export class VendorDetailComponent {
     this.vendorService.getbyId(this.id).subscribe(
         jr => { this.vendor= jr as Vendor}
     );
+}
+delete() {
+  this.vendorService.delete(this.id).subscribe(jr =>
+      this.router.navigateByUrl("vendor/list"));
 }
 }
   
