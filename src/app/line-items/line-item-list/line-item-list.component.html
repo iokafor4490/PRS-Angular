@@ -1,1 +1,35 @@
-<p>line-item-list works!</p>
+<h1>Line Items:</h1>
+<head>
+    <tr>
+        <th>Part Number</th>
+        <th>Product Description</th>
+        <th>Vendor</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+    </tr>
+</head>
+<tbody>
+    <tr *ngFor="let lineItem of lineItems">
+        <td>{{lineItem.product.partNumber}}</td>
+        <td>{{lineItem.product.name}}</td>
+        <td>{{lineItem.product.vendor.name}}</td>
+        <td>{{lineItem.product.price}}</td>
+        <td>{{lineItem.product.quantity}}</td>
+        <td>{{lineItem.product.price * lineItem.quan}}</td>
+        <td><img class="icon" src="../../..assets/Detail-Icon.png" alt="" routerLink="/line-item/detail/{{lineItem.id}}"></td>
+        <td><img class="icon" src="../../..assets/PencilEditIcon.png" alt="" routerLink="/line-item/edit/{{lineItem.id}}"></td>
+        <td><img  class="icon" src="../../..assets/trash.png" alt="" ></td>
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+</tbody>

@@ -20,6 +20,8 @@ import { RequestListComponent } from './requests/request-list/request-list.compo
 import { RequestReviewComponent } from './requests/request-review/request-review.component';
 import { ReviewDetailComponent } from './requests/review-detail/review-detail.component';
 import { HomeComponent } from './home/home.component';
+import { LineItemEditComponent } from './line-items/line-item-edit/line-item-edit.component';
+import { LineItemDetailComponent } from './line-items/line-item-detail/line-item-detail.component';
 
 
 const routes: Routes = [
@@ -45,6 +47,8 @@ const routes: Routes = [
   { path: "vendor/edit/:id", component: VendorEditComponent },
   { path: "vendor/detail/:id", component: VendorDetailComponent },
   { path: "product/list", component: ProductListComponent },
+  { path: "line-item/edit/:id", component: LineItemEditComponent},
+  { path: "line-item/detail/:id", component: LineItemDetailComponent},
   { path: '**', component: HomeComponent } // If you mess up in any way, it'll send you to this page (not secure!!!!)
   
   
