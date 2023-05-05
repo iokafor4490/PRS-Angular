@@ -13,11 +13,11 @@ export class ProductCreateComponent {
 
   constructor (private productService: ProductService) {}
 
-  ngOnInit() {
-      this.productService.create(this.products).subscribe(
-          jr => {
-              this.products = jr as Product;
-          }
-      )
-  }
+  ngOnInit() {}
+
+  create() {
+    this.productService.create(this.products).subscribe(jr =>
+        this.products = jr as Product);
+} 
+    
 }
