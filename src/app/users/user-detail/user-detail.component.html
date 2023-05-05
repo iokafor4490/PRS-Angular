@@ -27,9 +27,11 @@
     <br>
    
    </form>
+   <br>
+   <br>
     
-   <button routerLink="/user/edit/{{user.id}}" type="edit" value="Edit">Edit</button>
-   <button type="delete" value="Delete">Delete</button>
+   <button routerLink="/user/edit/{{user.id}}">Edit</button>
+   <button (click)="delete()">Delete</button>
 
 
 <app-footer></app-footer>

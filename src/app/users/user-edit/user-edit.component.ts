@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from 'src/app/model/user.class';
 import { UserService } from 'src/app/service/user.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-edit',
@@ -15,6 +15,7 @@ id: number = 0;
 
 constructor( 
   private userService: UserService,
+  private router: Router,
   private route: ActivatedRoute) {}
 
 ngOnInit() {
@@ -22,8 +23,8 @@ ngOnInit() {
  this.userService.getbyId(this.id).subscribe(jr => this.users = jr as User);
 
 }
-update() {
-  this.userService.update(this.users).subscribe(jr => {this.users = jr as User});
+update(): void {
+  this.userService.update(this.users).subscribe(jr => this.router.navigateByUrl("/user/list"));
 }
 
 

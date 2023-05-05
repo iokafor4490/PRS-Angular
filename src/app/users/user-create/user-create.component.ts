@@ -23,8 +23,8 @@ constructor(
 
 }
 
-update(): void {
-  this.userService.update(this.user).subscribe(jr => this.router.navigateByUrl("/users/list"));
+create(): void {
+  this.userService.create(this.user).subscribe(jr => this.router.navigateByUrl("/users/list"));
 }
 
 }

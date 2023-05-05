@@ -26,12 +26,14 @@
     <input type="text" name="password" [(ngModel)]="users.password">
     <br>
     
-    <label for="fname">Reviewer Status:&nbsp;</label>
-    
-    <br>
-    <br>
-    
-    <label for="fname">Admin Status:&nbsp;</label>
+    <tr>
+        <td>Reviewer Status:</td>
+        <td>{{users.isReviewer}}</td>
+    </tr>
+    <tr>
+        <td>Admin Status:</td>
+        <td>{{users.isAdmin}}</td>
+    </tr>
     
     <br>
     <br>
@@ -40,7 +42,7 @@
    </form>
     
     
-   <button type="Save" value="Save">Save</button>
+   <button type="Update" value="Save">Update</button>
 
 
 
