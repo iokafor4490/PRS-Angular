@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { User } from 'src/app/model/user.class';
 import { Request } from 'src/app/model/request.class';
+import { UserService } from 'src/app/service/user.service';
+import { LineItem } from 'src/app/model/line-item.class';
+import { ActivatedRoute } from '@angular/router';
+import { RequestService } from 'src/app/service/request.service';
 
 @Component({
   selector: 'app-request-edit',
@@ -9,31 +13,17 @@ import { Request } from 'src/app/model/request.class';
 })
 export class RequestEditComponent {
 pageTitle: string = "Edit Request";
+request!: Request;
 user!: User;
-request: any =
+lineItems: LineItem[] = [];
+id: number = 0;
 
-{
-  "id": 1,
-  "description": "test request",
-  "justification": "test",
-  "rejectionReason": "test",
-  "deliveryMode": "test",
-  "submittedDate": "2023-03-08T00:00:00",
-  "dateNeeded": "2023-01-18",
-  "status": "Approved",
-  "total": 3629.7,
-  "user": {
-      "id": 1,
-      "userName": "username",
-      "firstName": "firstName",
-      "lastName": "lastName",
-      "phone": "5135551234",
-      "email": "admin@email.com",
-      "isReviewer": true,
-      "isAdmin": true
-  }
+constructor(
+  private requestService: RequestService,
+  private route: ActivatedRoute) {}
+
+ngOnInit() {
+  this.route.params.subscribe(p => this.id = p['id']);
+  this.requestService.getById(this.id).subscribe(jr => this.request = jr as Request);
 }
-
 }
-
-

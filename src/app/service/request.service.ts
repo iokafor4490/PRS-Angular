@@ -11,23 +11,23 @@ import { Request } from '../model/request.class';
 
     constructor(private http: HttpClient) { }
 
-    getAllRequests(): Observable<Request> {
+    getAll(): Observable<Request> {
         return this.http.get(this.url) as Observable<Request>;
     }
 
-    getRequest(id: number): Observable<Request> {
+    getById(id: number): Observable<Request> {
         return this.http.get(this.url + "/" + id) as Observable<Request>;
     }
       
-    createRequest(request: Request): Observable<Request> {
+    create(request: Request): Observable<Request> {
         return this.http.post(this.url, request) as Observable<Request>;
     }
     
-    updateRequest(request: Request): Observable<Request> {
+    update(request: Request): Observable<Request> {
         return this.http.put(this.url, request) as Observable<Request>;
     }
       
-    deleteRequest(id: number): Observable<Request> {
+    delete(id: number): Observable<Request> {
         return this.http.delete(this.url + id) as Observable<Request>;
     }
 
@@ -37,16 +37,23 @@ import { Request } from '../model/request.class';
 
     }
 
-    approveRequest(request: Request): Observable<Request> {
+    approve(request: Request): Observable<Request> {
         return this.http.put(this.url + "approve", request) as Observable<Request>;
     }
 
-    rejectRequest(request: Request): Observable<Request> {
+    reject(request: Request): Observable<Request> {
         return this.http.put(this.url + "reject/", request) as Observable<Request>;
     }
 
-    //getRequestByUserId(request: Request): Observable<Request> {
-       
-    //} 
+    reopen(request: Request): Observable<Request> {
+        return this.http.put(this.url + "/reopen", request) as Observable<Request>;
+    }
+
+   
+    getAllForReview(userId: number): Observable<Request[]> {
+        return this.http.get(this.url + "/list-review" + userId) as Observable<Request[]>;
+    }
+
+   
 
   }

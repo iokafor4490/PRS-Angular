@@ -3,36 +3,36 @@
 <form>
     
     <label for="fname">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name="fname" [(ngModel)]="users.firstName">
+    <input type="text" name="fname" [(ngModel)]="user.firstName">
     <br>
     
     <label for="fname">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name="lname" [(ngModel)]="users.lastName">
+    <input type="text" name="lname" [(ngModel)]="user.lastName">
     <br>
     
     <label for="fname">Phone Number:&nbsp;</label>
-    <input type="text" name="phonenumber" [(ngModel)]="users.phone">
+    <input type="text" name="phonenumber" [(ngModel)]="user.phone">
     <br>
     
     <label for="fname">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name="email" [(ngModel)]="users.email">
+    <input type="text" name="email" [(ngModel)]="user.email">
     <br>
     
     <label for="fname">Username:&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name="username" [(ngModel)]="users.userName">
+    <input type="text" name="username" [(ngModel)]="user.userName">
     <br>
     
     <label for="fname">Password:&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name="password" [(ngModel)]="users.password">
+    <input type="text" name="password" [(ngModel)]="user.password">
     <br>
     
     <tr>
         <td>Reviewer Status:</td>
-        <td>{{users.isReviewer}}</td>
+        <td>{{user.isReviewer}}</td>
     </tr>
     <tr>
         <td>Admin Status:</td>
-        <td>{{users.isAdmin}}</td>
+        <td>{{user.isAdmin}}</td>
     </tr>
     
     <br>
@@ -42,7 +42,7 @@
    </form>
     
     
-   <button type="Update" value="Save">Update</button>
+   <button (click)="update()">Update</button>
 
 
 

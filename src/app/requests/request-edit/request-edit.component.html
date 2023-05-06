@@ -7,31 +7,31 @@
     <form class="form">
 
         <label for="submittedDate">Submitted Date :</label>
-        <input type="text" name="submittedDate">
+        <input type="text" name="submittedDate" [(ngModel)]="request.submittedDate">
         <br>
 
         <label for="dateNeeded">Date Needed :</label>
-        <input type="text" name="dateNeeded">
+        <input type="text" name="dateNeeded" [(ngModel)]="request.dateNeeded">
         <br>
 
-        <label for="username">Username :</label>
-        <input type="text" name="username">
+        <label for="username">User:</label>
+        <input type="text" name="username" [(ngModel)]="request.user.userName" >
         <br>
 
         <label for="description">Description :</label>
-        <input type="text" name="description">
+        <input type="text" name="description" [(ngModel)]="request.description">
         <br>
 
         <label for="justification">Justification :</label>
-        <input type="text" name="justification">
+        <input type="text" name="justification" [(ngModel)]="request.justification">
         <br>
 
         <label for="status">Status :</label>
-        <input type="text" name="status">
+        <input type="text" name="status" [(ngModel)]="request.status">
         <br>
 
         <label for="rejectionReason">Reason for Rejection :</label>
-        <input type="text" name="rejectionReason">
+        <input type="text" name="rejectionReason" [(ngModel)]="request.rejectionReason">
         <br>
     
 
