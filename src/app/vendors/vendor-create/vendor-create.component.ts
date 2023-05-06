@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Vendor } from 'src/app/model/vendor.class';
 import { VendorService } from 'src/app/service/vendor.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vendor-create',
@@ -9,20 +10,19 @@ import { VendorService } from 'src/app/service/vendor.service';
 })
 export class VendorCreateComponent {
   pageTitle: string = "Create New Vendor";
-  vendor!: Vendor;
+  vendor: Vendor = new Vendor();
 
   constructor(
-    private vendorService: VendorService) {}
+    private vendorService: VendorService,  
+    private router: Router) {}
 
-    ngOnit() {}
+    
   
-    create() {
-        this.vendorService.create(this.vendor).subscribe(jr => {
-            this.vendor = jr as Vendor;
-    })
+    create(): void {
+    this.vendorService.create(this.vendor).subscribe(jr => this.router.navigateByUrl("/vendor/list"));
+    }
   
   }
   
   
-  }
-
+  
