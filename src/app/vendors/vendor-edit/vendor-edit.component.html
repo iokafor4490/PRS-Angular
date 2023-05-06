@@ -3,39 +3,39 @@
 <form>
     
     <label for="code">Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name= "code" [(ngModel)]= "vendors.code">
+    <input type="text" name= "code" [(ngModel)]= "vendor.code">
     <br><br>
     
     <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name= "name" [(ngModel)]= "vendors.name">
+    <input type="text" name= "name" [(ngModel)]= "vendor.name">
     <br><br>
     
     <label for="address">Address:&nbsp;</label>
-    <input type="text" name= "address" [(ngModel)]= "vendors.address">
+    <input type="text" name= "address" [(ngModel)]= "vendor.address">
     <br><br>
     
     <label for="city">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name= "city" [(ngModel)]= "vendors.city">
+    <input type="text" name= "city" [(ngModel)]= "vendor.city">
     <br><br>
     
     <label for="state">State:&nbsp;&nbsp;&nbsp;</label>
-    <input type="text"name= "state" [(ngModel)]= "vendors.state">
+    <input type="text"name= "state" [(ngModel)]= "vendor.state">
     <br><br>
     
     <label for="zipcode">Zip Code:&nbsp;&nbsp;&nbsp;</label>
-    <input type="text"  name= "zip code" [(ngModel)]= "vendors.zip">
+    <input type="text"  name= "zip code" [(ngModel)]= "vendor.zip">
     <br><br>
     
     <label for="phonenumber">Phone Number:&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name= "phone number" [(ngModel)]= "vendors.phone">
+    <input type="text" name= "phone number" [(ngModel)]= "vendor.phone">
     <br><br>
     
     <label for="email">Email:&nbsp;&nbsp;&nbsp;</label>
-    <input type="text"  name="email" [(ngModel)]= "vendors.email">
+    <input type="text"  name="email" [(ngModel)]= "vendor.email">
     <br><br>
    
    </form>
 
-   <button>Update</button>
+   <button (click)="update()">Update</button>
     
 <app-footer></app-footer>
