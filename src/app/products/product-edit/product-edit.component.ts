@@ -10,9 +10,9 @@ import { VendorService } from 'src/app/service/vendor.service';
   templateUrl: './product-edit.component.html',
   styleUrls: ['./product-edit.component.css']
 })
-export class ProductEditComponent {
+export class ProductEditComponent implements OnInit {
   pageTitle: string = "Edit Products";
-  products!: Product
+  product: Product = new Product();
   id: number = 0;
   
   constructor(
@@ -23,10 +23,10 @@ export class ProductEditComponent {
 
     ngOnInit() {
       this.route.params.subscribe(params => this.id = params['id']);
-      this.productService.getbyId(this.id).subscribe(jr => this.products = jr as Product);
+      this.productService.getbyId(this.id).subscribe(jr => this.product = jr as Product);
      
      }
      update() {
-       this.productService.update(this.products).subscribe(jr => {this.products = jr as Product});
+      this.productService.update(this.product).subscribe(jr => this.router.navigateByUrl("/product/list"));
+    }
      }
-}

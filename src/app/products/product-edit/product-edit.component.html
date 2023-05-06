@@ -3,19 +3,19 @@
 
 
 <label for="partnumber">Part Number:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="partnumber" name="partnumber" placeholder="{{products.partNumber}}">
+<input type="partnumber" name="partnumber" [(ngModel)]= "product.partNumber">
 <br>
 <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="name"  name="name" placeholder="{{products.name}}">
+<input type="name"  name="name" [(ngModel)]="product.name">
 <br>
 <label for="price">Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="price"  name="price" placeholder="{{products.price}}">
+<input type="price"  name="price" [(ngModel)]="product.price">
 <br>
 <label for="unit">Unit:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="unit"  name="unit" placeholder="{{products.unit}}">
+<input type="unit"  name="unit" [(ngModel)]="product.unit">
 <br>
 <label for="photopath">Photo Path:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-<input type="photopath"  name="photopath" placeholder="{{products.photoPath}}">
+<input type="photopath"  name="photopath" [(ngModel)]="product.photoPath">
 <br>
 
 <label for="vendor">Vendor: </label>
@@ -36,7 +36,9 @@
 <br>
 <br>
 
-<button type="save">Save</button>
+<button (click)="update()">Update</button>
+
+
 
 
 
