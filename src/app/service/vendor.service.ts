@@ -22,7 +22,7 @@ export class VendorService {
     }
       
     create(vendor: Vendor): Observable<Vendor> {
-        return this.http.post(this.url, Vendor) as Observable<Vendor>;
+        return this.http.post(this.url, vendor) as Observable<Vendor>;
     }
     
     update(vendor: Vendor): Observable<Vendor> {
