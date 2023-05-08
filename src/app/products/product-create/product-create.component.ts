@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class ProductCreateComponent {
   pageTitle: string = "Create New Product";
   products!: Product;
+  
 
   constructor (private productService: ProductService,
   private router: Router) {}
